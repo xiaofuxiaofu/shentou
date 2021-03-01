@@ -1,0 +1,62 @@
+[root@localhost .ssh]# ls
+authorized_keys  id_rsa  id_rsa.pub  known_hosts
+[root@localhost .ssh]# cat authorized_keys 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDXgi4kiXDVdgZyp4AIzipm+BlrWpzpgel8ECh4D6PX8buphj1+l+uGkUmiZGaX2/zXNJ+R95PuO/P0vAwcxB428TKux08J9bAQCvMNG9gUvb3HRF7bWgqE/rY1fDUlPdnYXCoE5nGta8IfbaZ7X5C5qDJrajwc1jEP8alVKUbOvui80Yh5SklHTEqhxJFXj77KfBabWfyA7pu03fozS+bApLtDiTjU5YCUKxu0fp16y8nl7+hqhptowMDovJtMrCOoe7BKcKLxZBPf6wNwVaNL02MKOOx6h9yr8pOxcVL41PijoIH+5zOv/HvoOvGnjPX8ZxwceHP/adW/JGewyxWt root@bogon
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDFBq7bXvyFDSBaba/ecYPn9cL+v6V1a3tqAM06XzleMGAwLL5g2dh+eZSZ/l56P25ewENjgiK+T9Jp02mPRUXgEuZQZ77j4OjevqmMx2aU/79Y+RkLSusyclgwSh47YzZRisokxMzUoOTozRZYIAxFCMV3R86LyVJiePq/CLAMSYDzWzC3ahu41kr+9B4QiT0X+0bkX7LhYv4/FN7bZC2wevzeUFtDs1+z5I8JXsd8EdTHo4F0uc/F/MpzWFEl/4QWz9zpF7gooVT4YsICEGx69AvQg7/L4eg8sObgy384bSK8pMAkwUpX8w+catq8mV1qwn9H8RFqeTBpzKgJ4HMr root@РЎБъ1
+[root@localhost .ssh]# cat id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCn4RyR9mn6ocsK9wfpLPhQ5eX4VcQiBVeIE5vjYeC+GCyRTqzlm8WREab5lxO4YR/11l+oQAMY2auuN2XqWnXrZgOEk03zcKEMV/Nh7q/jbhG7xcs63uy0pbeJGayzd4yxoJaNyRLD4Iya2p0jKVbKmwEOLj+N4yJR6pULxsGxb++Uyzt0zHDEblqC60+sv2/7jtH9XNRkcDTNw6AQYCM/v8mrdNedY2Sy0FZPU/Bx1Hu61gZLY36cuAThhcdZLPP0puU5MXD8M9HHHOKFxqWg3wpFGEXxioTE467zJVxVGJT2WbxjeuAYGHDFt7G0qgnTxiYAfwGWFG/diOSrpf3R server
+
+....../zizu1xiangmu/.git/config
+[root@localhost .git]# cat config 
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@192.168.2.55:test/zizu/zizu1xiangmu.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+
+-------------------------------------------------------------------
+132
+cd /var/www/html/webphp/monitor/.git
+[core]
+        repositoryformatversion = 0
+        filemode = false
+        bare = false
+        logallrefupdates = true
+        symlinks = false
+        ignorecase = true
+[remote "origin"]
+        url = git@git.shanzhouweb.com:yunwei/monitor.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+        remote = origin
+        merge = refs/heads/master
+
+cd /var/www/html/webphp/zizu1xiangmu/.git
+[core]
+        repositoryformatversion = 0
+        filemode = true
+        bare = false
+        logallrefupdates = true
+[remote "origin"]
+        url = git@192.168.2.55:test/zizu/zizu1xiangmu.git
+        fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "master"]
+        remote = origin
+        merge = refs/heads/master
+
+------------------
+[root@localhost .ssh]# cat authorized_keys 
+sh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDFBq7bXvyFDSBaba/ecYPn9cL+v6V1a3tqAM06XzleMGAwLL5g2dh+eZSZ/l56P25ewENjgiK+T9Jp02mPRUXgEuZQZ77j4OjevqmMx2aU/79Y+RkLSusyclgwSh47YzZRisokxMzUoOTozRZYIAxFCMV3R86LyVJiePq/CLAMSYDzWzC3ahu41kr+9B4QiT0X+0bkX7LhYv4/FN7bZC2wevzeUFtDs1+z5I8JXsd8EdTHo4F0uc/F/MpzWFEl/4QWz9zpF7gooVT4YsICEGx69AvQg7/L4eg8sObgy384bSK8pMAkwUpX8w+catq8mV1qwn9H8RFqeTBpzKgJ4HMr root@РЎБъ1
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCn4RyR9mn6ocsK9wfpLPhQ5eX4VcQiBVeIE5vjYeC+GCyRTqzlm8WREab5lxO4YR/11l+oQAMY2auuN2XqWnXrZgOEk03zcKEMV/Nh7q/jbhG7xcs63uy0pbeJGayzd4yxoJaNyRLD4Iya2p0jKVbKmwEOLj+N4yJR6pULxsGxb++Uyzt0zHDEblqC60+sv2/7jtH9XNRkcDTNw6AQYCM/v8mrdNedY2Sy0FZPU/Bx1Hu61gZLY36cuAThhcdZLPP0puU5MXD8M9HHHOKFxqWg3wpFGEXxioTE467zJVxVGJT2WbxjeuAYGHDFt7G0qgnTxiYAfwGWFG/diOSrpf3R server
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDXgi4kiXDVdgZyp4AIzipm+BlrWpzpgel8ECh4D6PX8buphj1+l+uGkUmiZGaX2/zXNJ+R95PuO/P0vAwcxB428TKux08J9bAQCvMNG9gUvb3HRF7bWgqE/rY1fDUlPdnYXCoE5nGta8IfbaZ7X5C5qDJrajwc1jEP8alVKUbOvui80Yh5SklHTEqhxJFXj77KfBabWfyA7pu03fozS+bApLtDiTjU5YCUKxu0fp16y8nl7+hqhptowMDovJtMrCOoe7BKcKLxZBPf6wNwVaNL02MKOOx6h9yr8pOxcVL41PijoIH+5zOv/HvoOvGnjPX8ZxwceHP/adW/JGewyxWt root@bogon
+
+[root@localhost .ssh]# cat id_rsa.pub 
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDn+f65KZz2m4UXX1NZsFBBzvIukNZS4V2SU8SrgJcLbTy4ncXz+8KmH3xrRV2T2EJ3GBCQJFdziFdOButFHvO9tEUedZA22/YhN773NDP0ocbPWInEs3Cu6piLOTMHZR7p+vPYou4Zh5BmhY8Dbpl/gSBONB9Vrjx7x+kzk/Spn2TbzLG1QSarXLr58VWgrfkFMHaYPsqflsjetmd2WXDiRH1uK+GWZ6ELAwgqr6N4RDs59g+ZaeUmDR/+5cZlKp1so3NDE4wXTeL9k2S9/tvQjIrOHjbQjE+8aH12Anq2FthT5EImMV5xjWIAYu9+PI+MBEgczer3pLVoIo34FJOn root@localhost.localdomain
+[root@localhost .ssh]# 
+
